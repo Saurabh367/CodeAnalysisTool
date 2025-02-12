@@ -3,10 +3,7 @@ package com.example.codereviewtool.controller;
 import com.example.codereviewtool.request.CodeRequest;
 import com.example.codereviewtool.service.CodeExecutionService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/review")
@@ -21,6 +18,6 @@ public class CodeExecutionController {
 
     @PostMapping
     public String executeCode(@RequestBody CodeRequest request) {
-        return codeExecutionService.executeCode(request.getCode());
+        return codeExecutionService.executeCode(request.getCode(), request.getLanguage());
     }
 }
