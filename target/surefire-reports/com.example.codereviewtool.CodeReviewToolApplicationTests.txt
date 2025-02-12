@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.codereviewtool.CodeReviewToolApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.409 s -- in com.example.codereviewtool.CodeReviewToolApplicationTests
